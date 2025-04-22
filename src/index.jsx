@@ -18,12 +18,12 @@ const Main = () => {
             <Head action={setShowPage}> </Head>
             <Routes>
                 <Route
-                    path={"/stat/:viewType"}
-                    element={<App action={setData}/>}
-                />
-                <Route
                     path={"/main"}
                     element={<Stat statData ={data}/>}
+                />
+                <Route
+                    path={"/stat/:viewType"}
+                    element={<App action={setData}/>}
                 />
                 <Route
                     path={"/plan"}
@@ -31,7 +31,7 @@ const Main = () => {
                 />
                 <Route
                     path={"*"}
-                    element={<App action={setData}/>}
+                    element={<Stat statData ={data}/>}
                 />
             </Routes>
             
