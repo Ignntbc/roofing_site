@@ -65,10 +65,19 @@ const Stat = (props) => {
 
     const handleCheckboxChange2 = (event) => {
         const { name, checked } = event.target;
+    
+        // Обновляем состояние чекбоксов
         setCheckboxStates2({
             ...checkboxStates2,
             [name]: checked,
         });
+    
+        // Если флажок снят, сбрасываем соответствующее значение
+        if (!checked) {
+            if (name === 'azot') setAzotValue('');
+            if (name === 'fosfor') setFosforValue('');
+            if (name === 'kaliy') setKaliyValue('');
+        }
     };
 
     const getGenitiveLabel = (label) => {
@@ -613,16 +622,35 @@ const Stat = (props) => {
                 delete updatedValues[`${name}_area`];
                 return updatedValues;
             });
+        } else {
+            // Если флажок установлен, добавляем пустые значения для ввода
+            setCropValues((prevValues) => ({
+                ...prevValues,
+                [`${name}_yield`]: '',
+                [`${name}_area`]: '',
+            }));
         }
     };
 
 
 
     const handleCheckboxChange = (event) => {
+        const { name, checked } = event.target;
+    
+        // Обновляем состояние чекбоксов
         setCheckboxStates({
             ...checkboxStates,
-            [event.target.name]: event.target.checked,
+            [name]: checked,
         });
+    
+        // Если флажок снят, сбрасываем соответствующее значение
+        if (!checked) {
+            if (name === 'navoz1') setNavoz1Value('');
+            if (name === 'navoz2') setNavoz2Value('');
+            if (name === 'torf') setTorfValue('');
+            if (name === 'pom') setPomValue('');
+            if (name === 'other') setOtherValue('');
+        }
     };
 
 
