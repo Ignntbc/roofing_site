@@ -804,7 +804,7 @@ const Stat = (props) => {
                             />
                             {checkboxStates.navoz1 && <InputComponent inputValue={navoz1Value} action={setNavoz1Value} placeholder={"Введите внесенное количество навоза подстилочного за год в тоннах"} />}
                         </div>
-                        <div style={{ alignItems: 'center' }}>
+                        <div style={{ alignItems: 'center', width: '100%' }}>
                             <FormControlLabel
                                 control={<Checkbox checked={checkboxStates.navoz2} onChange={handleCheckboxChange} name="navoz2" />}
                                 label="Навоз бесподстилочный"

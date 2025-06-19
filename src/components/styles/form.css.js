@@ -18,7 +18,7 @@ const css = {
     Input: styled.input`
         display: block;
         position: relative;
-        width: 110%;
+        width: 100%;
         height: 40px;
         outline: none;
         border: none;
