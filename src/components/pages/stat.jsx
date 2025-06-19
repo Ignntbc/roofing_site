@@ -809,7 +809,10 @@ const Stat = (props) => {
                                 control={<Checkbox checked={checkboxStates.navoz2} onChange={handleCheckboxChange} name="navoz2" />}
                                 label="Навоз бесподстилочный"
                             />
-                            {checkboxStates.navoz2 && <InputComponent inputValue={navoz2Value} action={setNavoz2Value} placeholder={"Введите внесенное количество навоза бесподстилочного за год в тоннах"} />}
+                            {checkboxStates.navoz2 &&
+                                <div style={{ flex: 1 }}>
+                                    <InputComponent inputValue={navoz2Value} action={setNavoz2Value} placeholder={"Введите внесенное количество навоза бесподстилочного за год в тоннах"} />
+                                </div>}
                         </div>
                         <div style={{ alignItems: 'center' }}>
                             <FormControlLabel
