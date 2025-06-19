@@ -810,7 +810,7 @@ const Stat = (props) => {
                                 label="Навоз бесподстилочный"
                             />
                             {checkboxStates.navoz2 &&
-                                <div style={{ flex: 1 }}>
+                                <div style={{ flex: 1, width: '100%' }}>
                                     <InputComponent inputValue={navoz2Value} action={setNavoz2Value} placeholder={"Введите внесенное количество навоза бесподстилочного за год в тоннах"} />
                                 </div>}
                         </div>
