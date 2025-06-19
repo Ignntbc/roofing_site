@@ -830,7 +830,7 @@ const Stat = (props) => {
                                 control={<Checkbox checked={checkboxStates.other} onChange={handleCheckboxChange} name="other" />}
                                 label="Солома, сидераты и другое"
                             />
-                            {checkboxStates.other && <InputComponent inputValue={otherValue} action={setOtherValue} placeholder={"Введите внесенное количество"} />}
+                            {checkboxStates.other && <InputComponent inputValue={otherValue} action={setOtherValue} placeholder={"Введите внесенное количество за год в тоннах"} />}
                         </div>
                         {/* <div>
                     <Header>Результат расчета</Header>
