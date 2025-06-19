@@ -22,6 +22,7 @@ const css = {
         height: 40px;
         outline: none;
         border: none;
+        box-sizing: border-box;
         background-color: rgb(229, 229, 229);
         border-radius: 4px;
         padding-left: 14px;
