@@ -26,7 +26,7 @@ const InputComponent = (props) => {
                 placeholder={placeholder}
                 maxLength={"50"}
                 onChange={handleChange}
-                style={{ width: '100%' }}
+                style={{ width: '110%' }}
             />
         </React.Fragment>
     );

@@ -28,7 +28,7 @@ const css = {
         margin-bottom: 10px;
         :last-child {
             margin-bottom: 0px;
-        }        
+        }
     `,
     Button: styled.span`
     display: block;
