@@ -4,7 +4,7 @@ import { Link, useNavigate } from 'react-router-dom';
 
 
 const { HeaderContainer, HeaderCSS } = css;
-const ButtonCSS  = {
+const ButtonCSS = {
   display: 'block',
   padding: '10px 14px 12px',
   borderRadius: '6px',
@@ -22,13 +22,13 @@ const Head = () => {
   return (
     <React.Fragment>
       <HeaderContainer>
-        <HeaderCSS.Logo>EcoCalc</HeaderCSS.Logo>
+        <HeaderCSS.Logo>GHGcalc</HeaderCSS.Logo>
         <HeaderCSS.MenuContainer>
-          <button onClick={() => navigate('/main')} style = {ButtonCSS}>Главная</button>
+          <button onClick={() => navigate('/main')} style={ButtonCSS}>Главная</button>
           {/* <button onClick={() => navigate('/stat/расход')}style = {ButtonCSS}>Статистика</button> */}
           {/* <button onClick={() => navigate('/plan')}style = {ButtonCSS}>Планирование</button>  */}
         </HeaderCSS.MenuContainer>
-          
+
       </HeaderContainer>
     </React.Fragment>
   );
